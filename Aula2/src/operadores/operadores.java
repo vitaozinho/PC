@@ -10,6 +10,13 @@ public class operadores {
 		System.out.println("a area é:" area); 
 		
 		//exercicio8
+		int resto = 99 % 4;
+		System.out.println("\nResto é: "+resto);
 		
+		//exercicio9
+		int num = 7; 
+		double res = num*0.5;
+		
+		System.out.println("\n"+res);
 	}
 }

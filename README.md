@@ -1,3 +1,3 @@
-# PC
-# Aulas de Programação de Computadores
-# Etec ZL
+
+#  PROGRAMAÇÃO DE COMPUTADORES
+Técnico em informática - Etec ZL 

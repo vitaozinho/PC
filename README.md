@@ -1,2 +1,3 @@
 # PC
-Aulas de PC
+# Aulas de Programação de Computadores
+# Etec ZL

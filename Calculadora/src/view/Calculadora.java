@@ -13,36 +13,48 @@ import javax.swing.JTextField;
 
 public class Calculadora extends JFrame {
 	
-	JTextField txtVisor = new JTextField();
+		JTextField txtVisor = new JTextField();
 		
 		
 		
-		JMenuBar menu 			= new JMenuBar();
+		JMenuBar menu 			= new JMenuBar();	
 		JMenu exibir			= new JMenu	("Exibir");
 		JMenu editar			= new JMenu	("Editar");
 		JMenu ajuda 			= new JMenu	("Ajuda");   
+	   
 	    
-		//Menu exibir
-		JMenuItem padrao 		= new JMenuItem	("Padrão	");
+	    
+	 	//Menu exibir
+		JMenuItem padrao 		= new JMenuItem	("Padrão");
 		JMenuItem cienti 		= new JMenuItem	("Científica");
-        	JMenuItem program		= new JMenuItem	("Programador");
+		JMenuItem program		= new JMenuItem	("Programador");
 		JMenuItem statis 		= new JMenuItem	("Estastística");
 		JMenuItem historico		= new JMenuItem	("Histórico");
-       		JMenuItem agrup			= new JMenuItem	("Agrupamento de digítos");
+        	JMenuItem agrup			= new JMenuItem	("Agrupamento de digítos");
         	JMenuItem basico 		= new JMenuItem	("Básico");
         	JMenuItem conversor 		= new JMenuItem	("Conversão de Unidades");
         	JMenuItem data 			= new JMenuItem	("Cálculo de data");
-        	JMenuItem planilha 		= new JMenuItem	("Planilhas");
+        	JMenu 	  planilha 		= new JMenu	("Planilhas");
+        	JMenuItem hipoteca  		= new JMenuItem ("Hipoteca");
+        	JMenuItem leasing	 	= new JMenuItem ("Leasing de veículo");
+        	JMenuItem eco1			= new JMenuItem ("Economia de combustível (Km/l)");
+        	JMenuItem eco2			= new JMenuItem ("Economia de combustível (l/100 km)");
+        
         
         	//Menu editar
         	JMenuItem copiar 		= new JMenuItem	("Copiar  CTRL+C");
         	JMenuItem colar 		= new JMenuItem	("Colar CTRL+V");
-        	JMenuItem historico2 		= new JMenuItem	("Histórico");
+       	 	JMenu 	  historico2 		= new JMenu	("Histórico");
+        	JMenuItem copiHisto		= new JMenuItem ("Copiar histórico");
+        	JMenuItem edit			= new JMenuItem ("Editar");
+        	JMenuItem cancel		= new JMenuItem ("Cancelar edição");
+        	JMenuItem limpar		= new JMenuItem ("Limpar");
+        
+        
         
         	//Menu ajuda
-
         	JMenuItem exibirAjuda 		= new JMenuItem	("Exibir Ajuda");
-        	JMenuItem sobre			= new JMenuItem	("Sobre a Calculadora");
+       		JMenuItem sobre			= new JMenuItem	("Sobre a Calculadora");
         
 
 
@@ -76,37 +88,50 @@ public class Calculadora extends JFrame {
 		JButton btnIgual		= new  	JButton	("=");
 
 		public Calculadora() {
-			super("Calculadora");
+		super("Calculadora");
 			
-			Container paine = this.getContentPane();
-			paine.setLayout(null);
+		Container paine = this.getContentPane();
+		paine.setLayout(null);
 			
-			setJMenuBar(menu);
-			menu.add(exibir);
-	        	menu.add(editar);
-	        	menu.add(ajuda);
+		setJMenuBar(menu);
+		menu.add(exibir);
+	        menu.add(editar);
+	        menu.add(ajuda);
 	        
-	        	exibir.add(padrao);
-	        	exibir.add(cienti);
-	        	exibir.add(program);
-	        	exibir.add(statis);
-	        	exibir.addSeparator();
-	        	exibir.add(historico);
-	        	exibir.add(agrup);
-	        	exibir.addSeparator();
-	        	exibir.add(basico);
-	        	exibir.add(conversor);
-	       	 	exibir.add(data);
-	       	 	exibir.add(planilha);
 	        
-	        	editar.add(copiar);
-	        	editar.add(colar);
-	        	editar.addSeparator();
-	        	editar.add(historico2);
+	        exibir.add(padrao);
+	        exibir.add(cienti);
+	        exibir.add(program);
+	        exibir.add(statis);
+	        exibir.addSeparator();
+	        exibir.add(historico);
+	        exibir.add(agrup);
+	        exibir.addSeparator();
+	        exibir.add(basico);
+	        exibir.add(conversor);
+	        exibir.add(data);
+	        exibir.add(planilha);
+	        planilha.add(hipoteca);
+	        planilha.add(leasing);
+	        planilha.add(eco1);
+	        planilha.add(eco2);
 	        
-	        	ajuda.add(exibirAjuda);
-	        	ajuda.addSeparator();
-	        	ajuda.add(sobre); 
+	  
+	        
+	        editar.add(copiar);
+	        editar.add(colar);
+	        editar.addSeparator();
+	        editar.add(historico2);
+	        historico2.add(copiHisto);
+	        historico2.add(edit);
+	        historico2.add(cancel);
+	        historico2.add(limpar);
+	        
+	        
+	        ajuda.add(exibirAjuda);
+	        ajuda.addSeparator();
+	        ajuda.add(sobre); 
+			
 			
 			
 			txtVisor.setBounds(14, 11, 190, 50);
@@ -269,7 +294,5 @@ public class Calculadora extends JFrame {
 			Calculadora calc = new Calculadora();
 		}
 	}
-
-	
 
 

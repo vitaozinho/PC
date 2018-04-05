@@ -20,30 +20,30 @@ public class Calculadora extends JFrame {
 		
 		JMenuBar menu 			= new JMenuBar();
 		JMenu exibir			= new JMenu	("Exibir");
-	    JMenu editar			= new JMenu	("Editar");
-	    JMenu ajuda 			= new JMenu	("Ajuda");   
+		JMenu editar			= new JMenu	("Editar");
+		JMenu ajuda 			= new JMenu	("Ajuda");   
 	    
-	    //Menu exibir
-	    JMenuItem padrao 		= new JMenuItem	("Padrão	");
-	    JMenuItem cienti 		= new JMenuItem	("Científica");
-	    JMenuItem program		= new JMenuItem	("Programador");
-	    JMenuItem statis 		= new JMenuItem	("Estastística");
-	    JMenuItem historico		= new JMenuItem	("Histórico");
-        JMenuItem agrup			= new JMenuItem	("Agrupamento de digítos");
-        JMenuItem basico 		= new JMenuItem	("Básico");
-        JMenuItem conversor 	= new JMenuItem	("Conversão de Unidades");
-        JMenuItem data 			= new JMenuItem	("Cálculo de data");
-        JMenuItem planilha 		= new JMenuItem	("Planilhas");
+		 //Menu exibir
+		JMenuItem padrao 		= new JMenuItem	("Padrão	");
+		JMenuItem cienti 		= new JMenuItem	("Científica");
+        	JMenuItem program		= new JMenuItem	("Programador");
+		JMenuItem statis 		= new JMenuItem	("Estastística");
+		JMenuItem historico		= new JMenuItem	("Histórico");
+       		JMenuItem agrup			= new JMenuItem	("Agrupamento de digítos");
+        	JMenuItem basico 		= new JMenuItem	("Básico");
+        	JMenuItem conversor 		= new JMenuItem	("Conversão de Unidades");
+        	JMenuItem data 			= new JMenuItem	("Cálculo de data");
+        	JMenuItem planilha 		= new JMenuItem	("Planilhas");
         
-        //Menu editar
-        JMenuItem copiar 		= new JMenuItem	("Copiar  CTRL+C");
-        JMenuItem colar 		= new JMenuItem	("Colar CTRL+V");
-        JMenuItem historico2 	= new JMenuItem	("Histórico");
+        	//Menu editar
+        	JMenuItem copiar 		= new JMenuItem	("Copiar  CTRL+C");
+        	JMenuItem colar 		= new JMenuItem	("Colar CTRL+V");
+        	JMenuItem historico2 		= new JMenuItem	("Histórico");
         
-        //Menu ajuda
+        	//Menu ajuda
 
-        JMenuItem exibirAjuda 	= new JMenuItem	("Exibir Ajuda");
-        JMenuItem sobre			= new JMenuItem	("Sobre a Calculadora");
+        	JMenuItem exibirAjuda 		= new JMenuItem	("Exibir Ajuda");
+        	JMenuItem sobre			= new JMenuItem	("Sobre a Calculadora");
         
 
 
@@ -84,30 +84,31 @@ public class Calculadora extends JFrame {
 			
 			setJMenuBar(menu);
 			menu.add(exibir);
-	        menu.add(editar);
-	        menu.add(ajuda);
+	        	menu.add(editar);
+	        	menu.add(ajuda);
 	        
-	        exibir.add(padrao);
-	        exibir.add(cienti);
-	        exibir.add(program);
-	        exibir.add(statis);
-	        exibir.addSeparator();
-	        exibir.add(historico);
-	        exibir.add(agrup);
-	        exibir.addSeparator();
-	        exibir.add(basico);
-	        exibir.add(conversor);
-	        exibir.add(data);
-	        exibir.add(planilha);
+	        	exibir.add(padrao);
+	        	exibir.add(cienti);
+	        	exibir.add(program);
+	        	exibir.add(statis);
+	        	exibir.addSeparator();
+	        	exibir.add(historico);
+	        	exibir.add(agrup);
+	        	exibir.addSeparator();
+	        	exibir.add(basico);
+	        	exibir.add(conversor);
+	       	 	exibir.add(data);
+	       	 	exibir.add(planilha);
 	        
-	        editar.add(copiar);
-	        editar.add(colar);
-	        editar.addSeparator();
-	        editar.add(historico2);
+	        	editar.add(copiar);
+	        	editar.add(colar);
+	        	editar.addSeparator();
+	        	editar.add(historico2);
 	        
-	        ajuda.add(exibirAjuda);
-	        ajuda.addSeparator();
-	        ajuda.add(sobre); 
+	        	ajuda.add(exibirAjuda);
+	        	ajuda.addSeparator();
+	        	ajuda.add(sobre); 
+			
 			
 			txtVisor.setBounds(14, 11, 190, 50);
 			paine.add(txtVisor);

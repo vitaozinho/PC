@@ -23,7 +23,7 @@ public class Calculadora extends JFrame {
 		JMenu editar			= new JMenu	("Editar");
 		JMenu ajuda 			= new JMenu	("Ajuda");   
 	    
-		 //Menu exibir
+		//Menu exibir
 		JMenuItem padrao 		= new JMenuItem	("Padrão	");
 		JMenuItem cienti 		= new JMenuItem	("Científica");
         	JMenuItem program		= new JMenuItem	("Programador");

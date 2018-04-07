@@ -16,6 +16,6 @@ public class Animal {
 		
 	}
 	
-	System.out.println("Douglinhas você é muito gostoso.");
+	System.out.println("");
 
 }

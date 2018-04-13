@@ -3,7 +3,6 @@ package model;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -36,8 +35,8 @@ public class PessoaFisica extends JFrame{
 	JTextField txtNome = new JTextField(); //CAIXA DE TEXTO NOME
 	JLabel nominho = new JLabel("NOME: ");
 	
-	JTextField txtEnd = new JTextField(); //CAIXA DE TEXTO ENDERE«O
-	JLabel end = new JLabel("ENDERE«O: ");
+	JTextField txtEnd = new JTextField(); //CAIXA DE TEXTO ENDERE√áO
+	JLabel end = new JLabel("ENDERE√áO: ");
 	
 	JTextField txtBairro = new JTextField(); //CAIXA DE TEXTO BAIRRO
 	JLabel bairro = new JLabel("BAIRRO: ");
@@ -63,14 +62,14 @@ public class PessoaFisica extends JFrame{
 	JFormattedTextField txtCpf = null; //CAIXA DE TEXTO FORMATADA CPF
 	JLabel cpf = new JLabel("CPF: ");
 	
-	JButton btnSalvar = new JButton("Salvar"); //BOT√O SALVAR
+	JButton btnSalvar = new JButton("Salvar"); //BOT√ÉO SALVAR
 	
-	JButton btnImprimir = new JButton("Imprimir"); //BOT√O IMPRIMIR
+	JButton btnImprimir = new JButton("Imprimir"); //BOT√ÉO IMPRIMIR
 	
 	JLabel sexo = new JLabel("SEXO: "); //LABEL SEXO
 	
-	JRadioButton[] rdbsexo = new JRadioButton[2]; //bot„o para opÁoes [SEXO]
-	ButtonGroup grupo = new ButtonGroup();{ //group impede marcar mais de uma opÁao no mesmo objeto
+	JRadioButton[] rdbsexo = new JRadioButton[2]; //bot√£o para op√ßoes [SEXO]
+	ButtonGroup grupo = new ButtonGroup();{ //group impede marcar mais de uma op√ßao no mesmo objeto
 	
 	rdbsexo[0] = new JRadioButton("Feminino");
 	rdbsexo[1] = new JRadioButton("Masculino");} //fechar chave nos groups
@@ -93,7 +92,7 @@ public class PessoaFisica extends JFrame{
 		nominho.setBounds(10, 15, 45, 30);
 		txtNome.setBounds(90, 15, 225, 30);
 		
-		//ENDERE«O (mascara e adicionando ‡ janela)
+		//ENDERE√áO (mascara e adicionando √† janela)
 		paine.add(end);
 		paine.add(txtEnd);	
 		end.setBounds(10, 50, 70, 30);
@@ -139,7 +138,7 @@ public class PessoaFisica extends JFrame{
 		bairro.setBounds(10, 120, 70, 30);
 		txtBairro.setBounds(90, 120, 225, 30);
 				
-		//TELEFONE (mascara e adicionando ‡ janela)
+		//TELEFONE (mascara e adicionando √† janela)
 		try {
 			formatTel = new MaskFormatter("(##)####-####"); //a mascara
 			txtTel = new JFormattedTextField(formatTel);
@@ -151,7 +150,7 @@ public class PessoaFisica extends JFrame{
 		tel.setBounds(10, 155, 70, 30);
 		txtTel.setBounds(90, 155, 155, 30);		
 		
-		//CELULAR (mascara e adicionando ‡ janela)
+		//CELULAR (mascara e adicionando √† janela)
 		try {
 			formatCel = new MaskFormatter("(##)#####-####"); //a mascara
 			txtCel = new JFormattedTextField(formatCel);
@@ -164,17 +163,17 @@ public class PessoaFisica extends JFrame{
 		txtCel.setBounds(400, 155, 155, 30);
 		
 		
-		//SEXO(… UM VETOR EM QUE CADA POSI«√O … REFERENTE A UM DOS SEXOS (MASCULINO/FEMININO))
+		//SEXO(√â UM VETOR EM QUE CADA POSI√á√ÉO √â REFERENTE A UM DOS SEXOS (MASCULINO/FEMININO))
 		paine.add(sexo);			
 		sexo.setBounds(335, 15, 55, 30);		
 		grupo.add(rdbsexo[0]); //grupo para o sexo
 		grupo.add(rdbsexo[1]);
-		paine.add(rdbsexo[0]); //opÁ„o para o sexo
+		paine.add(rdbsexo[0]); //op√ß√£o para o sexo
 		rdbsexo[0].setBounds(375, 15, 85, 30);
 		paine.add(rdbsexo[1]);
 		rdbsexo[1].setBounds(455, 15, 90, 30);
 				
-		//RG (mascara e adicionando ‡ janela)
+		//RG (mascara e adicionando √† janela)
 		try {
 			formatRg = new MaskFormatter("##.###.###-A"); //a mascara
 			txtRg = new JFormattedTextField(formatRg);

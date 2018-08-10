@@ -18,27 +18,27 @@ import operations.Operacoes;
 
 public class Calculadora extends JFrame {
 	
-		JTextField txtVisor = new JTextField();    
+	JTextField txtVisor = new JTextField();    
 	
-		JMenuBar menu 			= new JMenuBar();
-		JMenu exibir			= new JMenu	("Exibir");
-	    JMenu editar			= new JMenu	("Editar");
-	    JMenu ajuda 			= new JMenu	("Ajuda");   
+	JMenuBar menu 			= new JMenuBar();
+	JMenu exibir			= new JMenu	("Exibir");
+	JMenu editar			= new JMenu	("Editar");
+	JMenu ajuda 			= new JMenu	("Ajuda");   
 	   
 	    
 	    
-	    //Menu exibir
-	    JMenuItem padrao 		= new JMenuItem	("Padrão	");
-	    JMenuItem cienti 		= new JMenuItem	("Científica");
-	    JMenuItem program		= new JMenuItem	("Programador");
-	    JMenuItem statis 		= new JMenuItem	("Estastística");
-	    JMenuItem historico		= new JMenuItem	("Histórico");
+	//Menu exibir
+	JMenuItem padrao 		= new JMenuItem	("Padrão");
+	JMenuItem cienti 		= new JMenuItem	("Científica");
+	JMenuItem program		= new JMenuItem	("Programador");
+	JMenuItem statis 		= new JMenuItem	("Estastística");
+	JMenuItem historico		= new JMenuItem	("Histórico");
         JMenuItem agrup			= new JMenuItem	("Agrupamento de digítos");
         JMenuItem basico 		= new JMenuItem	("Básico");
-        JMenuItem conversor 	= new JMenuItem	("Conversão de Unidades");
+        JMenuItem conversor 		= new JMenuItem	("Conversão de Unidades");
         JMenuItem data 			= new JMenuItem	("Cálculo de data");
-        JMenu 	  planilha 		= new JMenu		("Planilhas");
-        JMenuItem hipoteca  	= new JMenuItem ("Hipoteca");
+        JMenu 	  planilha 		= new JMenu	("Planilhas");
+        JMenuItem hipoteca  		= new JMenuItem ("Hipoteca");
         JMenuItem leasing	 	= new JMenuItem ("Leasing de veículo");
         JMenuItem eco1			= new JMenuItem ("Economia de combustível (Km/l)");
         JMenuItem eco2			= new JMenuItem ("Economia de combustível (l/100 km)");
@@ -47,7 +47,7 @@ public class Calculadora extends JFrame {
         //Menu editar
         JMenuItem copiar 		= new JMenuItem	("Copiar  CTRL+C");
         JMenuItem colar 		= new JMenuItem	("Colar CTRL+V");
-        JMenu 	  historico2 		= new JMenu		("Histórico");
+        JMenu 	  historico2 		= new JMenu	("Histórico");
         JMenuItem copiHisto		= new JMenuItem ("Copiar histórico");
         JMenuItem edit			= new JMenuItem ("Editar");
         JMenuItem cancel		= new JMenuItem ("Cancelar edição");
@@ -69,7 +69,7 @@ public class Calculadora extends JFrame {
 		JButton btnSeta 		= new 	JButton	("←");
 		JButton btnCE 			= new 	JButton	("CE");
 		JButton btnC 			= new 	JButton	("C");
-		JButton btnMaisMenos	= new 	JButton	("±");
+		JButton btnMaisMenos		= new 	JButton	("±");
 		JButton btnRaiz 		= new 	JButton	("√");
 		JButton btnOne 			= new 	JButton	("1");
 		JButton btnTwo 			= new 	JButton	("2");
@@ -82,7 +82,7 @@ public class Calculadora extends JFrame {
 		JButton btnNine 		= new 	JButton	("9");
 		JButton btnZero 		= new   JButton	("0");
 		JButton btnDivisao		= new	JButton	("/");
-		JButton btnPorcentagem	= new	JButton	("%");
+		JButton btnPorcentagem		= new	JButton	("%");
 		JButton btnMulti		= new 	JButton	("*");
 		JButton btnUmX			= new	JButton	("1/χ");
 		JButton btnSoma			= new	JButton	("+");
@@ -100,11 +100,11 @@ public class Calculadora extends JFrame {
 
 			
 			
-			Container paine = this.getContentPane();
-			paine.setLayout(null);
+		Container paine = this.getContentPane();
+		paine.setLayout(null);
 			
-			setJMenuBar(menu);
-			menu.add(exibir);
+		setJMenuBar(menu);
+		menu.add(exibir);
 	        menu.add(editar);
 	        menu.add(ajuda);
 	        
